@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module pycrystal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="consoals, arial">&nbsp;<br><big><big><strong>pycrystal</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="consoals, arial"><a href=".">index</a><br><a href="file:/home/tkw/workspace/progs/pycrystal/pycrystal.py">/home/tkw/workspace/progs/pycrystal/pycrystal.py</a></font></td></tr></table>
+    <p><tt>a&nbsp;module&nbsp;for&nbsp;crystal&nbsp;operation&nbsp;(especially&nbsp;2D&nbsp;crystals)</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="consoals, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="copy.html">copy</a><br>
+</td><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="consoals, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="consoals, arial"><a href="builtins.html#Exception">builtins.Exception</a>(<a href="builtins.html#BaseException">builtins.BaseException</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="consoals, arial"><a href="pycrystal.html#ArgError">ArgError</a>
+</font></dt><dt><font face="consoals, arial"><a href="pycrystal.html#NumpyShapeError">NumpyShapeError</a>
+</font></dt><dt><font face="consoals, arial"><a href="pycrystal.html#UnSupportedError">UnSupportedError</a>
+</font></dt></dl>
+</dd>
+<dt><font face="consoals, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="consoals, arial"><a href="pycrystal.html#Lattice">Lattice</a>
+</font></dt><dd>
+<dl>
+<dt><font face="consoals, arial"><a href="pycrystal.html#Lattice2D">Lattice2D</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="consoals, arial"><a name="ArgError">class <strong>ArgError</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ArgError">ArgError</a>(argName:&nbsp;str,&nbsp;des='')<br>
+&nbsp;<br>
+Common&nbsp;base&nbsp;class&nbsp;for&nbsp;all&nbsp;non-exit&nbsp;exceptions.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="pycrystal.html#ArgError">ArgError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ArgError-__init__"><strong>__init__</strong></a>(self, argName: str, des='')</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ArgError-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="ArgError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="consoals, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="ArgError-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="ArgError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="ArgError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="ArgError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="ArgError-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="ArgError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="ArgError-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#ArgError-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="consoals, arial"><a name="Lattice">class <strong>Lattice</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Lattice">Lattice</a>(sysname:&nbsp;str,&nbsp;bvs:&nbsp;numpy.ndarray,&nbsp;apd:&nbsp;Dict[str,&nbsp;numpy.ndarray]&nbsp;=&nbsp;None,&nbsp;apd_f:&nbsp;Dict[str,&nbsp;numpy.ndarray]&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+<a href="#Lattice">Lattice</a>&nbsp;with&nbsp;various&nbsp;operations&nbsp;(vectors&nbsp;are&nbsp;all&nbsp;row&nbsp;vectors)<br>
+&nbsp;<br>
+NOTE:&nbsp;since&nbsp;both&nbsp;the&nbsp;Cartesian&nbsp;and&nbsp;fractional&nbsp;atom&nbsp;positions&nbsp;can<br>
+be&nbsp;accessed&nbsp;frequently,&nbsp;both&nbsp;of&nbsp;them&nbsp;are&nbsp;stored&nbsp;as&nbsp;member&nbsp;data.&nbsp;Make<br>
+sure&nbsp;to&nbsp;call&nbsp;cart2frac&nbsp;or&nbsp;frac2cart&nbsp;when&nbsp;changes&nbsp;are&nbsp;made&nbsp;directly&nbsp;to&nbsp;one&nbsp;of&nbsp;them.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Lattice-__init__"><strong>__init__</strong></a>(self, sysname: str, bvs: numpy.ndarray, apd: Dict[str, numpy.ndarray] = None, apd_f: Dict[str, numpy.ndarray] = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Lattice-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Lattice-add_atom"><strong>add_atom</strong></a>(self, e: str, ap: numpy.ndarray)</dt><dd><tt>add&nbsp;an&nbsp;atom&nbsp;with&nbsp;cartesian&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;element<br>
+:param&nbsp;ap:&nbsp;cartesian&nbsp;atom&nbsp;position<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;index&nbsp;of&nbsp;newly&nbsp;added&nbsp;atom</tt></dd></dl>
+
+<dl><dt><a name="Lattice-add_atom_f"><strong>add_atom_f</strong></a>(self, e: str, ap: numpy.ndarray) -&gt; int</dt><dd><tt>add&nbsp;an&nbsp;atom&nbsp;with&nbsp;fractional&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;element<br>
+:param&nbsp;ap:&nbsp;fractional&nbsp;atom&nbsp;position<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;index&nbsp;of&nbsp;newly&nbsp;added&nbsp;atom</tt></dd></dl>
+
+<dl><dt><a name="Lattice-atom_distance"><strong>atom_distance</strong></a>(self, e0: str, i0: int, e1: str, i1: int) -&gt; float</dt><dd><tt>get&nbsp;the&nbsp;'closest'&nbsp;cartesian&nbsp;distance&nbsp;between&nbsp;two&nbsp;atoms<br>
+&nbsp;<br>
+:param&nbsp;e0:&nbsp;atom&nbsp;species&nbsp;of&nbsp;atom&nbsp;0<br>
+:param&nbsp;e1:&nbsp;atom&nbsp;species&nbsp;of&nbsp;atom&nbsp;1<br>
+:param&nbsp;i0:&nbsp;index&nbsp;of&nbsp;atom&nbsp;0<br>
+:param&nbsp;i1:&nbsp;index&nbsp;of&nbsp;atom&nbsp;1<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;cartesian&nbsp;distance&nbsp;between&nbsp;atom&nbsp;0&nbsp;and&nbsp;atom&nbsp;1</tt></dd></dl>
+
+<dl><dt><a name="Lattice-atom_num"><strong>atom_num</strong></a>(self, e: str) -&gt; int</dt><dd><tt>get&nbsp;the&nbsp;count&nbsp;of&nbsp;atoms&nbsp;of&nbsp;an&nbsp;atom&nbsp;species<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:returns:&nbsp;the&nbsp;count&nbsp;the&nbsp;`e`&nbsp;atoms</tt></dd></dl>
+
+<dl><dt><a name="Lattice-atom_num_dict"><strong>atom_num_dict</strong></a>(self) -&gt; Dict[str, int]</dt><dd><tt>get&nbsp;atom&nbsp;number&nbsp;dict&nbsp;(indexed&nbsp;by&nbsp;elements)</tt></dd></dl>
+
+<dl><dt><a name="Lattice-atom_species"><strong>atom_species</strong></a>(self) -&gt; List[str]</dt></dl>
+
+<dl><dt><a name="Lattice-confine_atoms_to_lattice"><strong>confine_atoms_to_lattice</strong></a>(self)</dt><dd><tt>put&nbsp;outside&nbsp;atoms&nbsp;back&nbsp;to&nbsp;the&nbsp;lattice&nbsp;by&nbsp;periodic&nbsp;repeating&nbsp;(-0.2&nbsp;-&gt;&nbsp;0.8,&nbsp;e.&nbsp;g.)<br>
+&nbsp;<br>
+NOTE:&nbsp;DON'T&nbsp;use&nbsp;this&nbsp;if&nbsp;there&nbsp;are&nbsp;vaccum&nbsp;in&nbsp;the&nbsp;lattice&nbsp;(2D&nbsp;lattice)&nbsp;and<br>
+the&nbsp;lattice&nbsp;atoms&nbsp;are&nbsp;actually&nbsp;shifted&nbsp;away&nbsp;from&nbsp;the&nbsp;lattice</tt></dd></dl>
+
+<dl><dt><a name="Lattice-delete_atom"><strong>delete_atom</strong></a>(self, e: str, i: int)</dt><dd><tt>delete&nbsp;an&nbsp;atom<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;index</tt></dd></dl>
+
+<dl><dt><a name="Lattice-eliminate_overlap"><strong>eliminate_overlap</strong></a>(self, crit: float)</dt><dd><tt>delete&nbsp;overlapping&nbsp;atoms&nbsp;(this&nbsp;can&nbsp;be&nbsp;CPU-consuming)<br>
+&nbsp;<br>
+:param&nbsp;crit:&nbsp;maximum&nbsp;inter-atom&nbsp;distance&nbsp;(cartesian)&nbsp;to&nbsp;be&nbsp;considered&nbsp;as&nbsp;overlap</tt></dd></dl>
+
+<dl><dt><a name="Lattice-extend"><strong>extend</strong></a>(self, nx: int, ny: int, nz: int)</dt><dd><tt>build&nbsp;super&nbsp;cell<br>
+&nbsp;<br>
+:param&nbsp;nx:&nbsp;repeat&nbsp;times&nbsp;on&nbsp;x<br>
+:param&nbsp;ny:&nbsp;repeat&nbsp;times&nbsp;on&nbsp;y<br>
+:param&nbsp;nz:&nbsp;repeat&nbsp;times&nbsp;on&nbsp;z</tt></dd></dl>
+
+<dl><dt><a name="Lattice-get_apd"><strong>get_apd</strong></a>(self) -&gt; Dict[str, numpy.ndarray]</dt><dd><tt>get&nbsp;Cartesian&nbsp;atom&nbsp;positions&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="Lattice-get_apd_f"><strong>get_apd_f</strong></a>(self) -&gt; Dict[str, numpy.ndarray]</dt><dd><tt>get&nbsp;fractional&nbsp;atom&nbsp;positions&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="Lattice-get_atom_position"><strong>get_atom_position</strong></a>(self, e: str, i: int) -&gt; numpy.ndarray</dt><dd><tt>get&nbsp;i-th&nbsp;atom's&nbsp;Cartesian&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index</tt></dd></dl>
+
+<dl><dt><a name="Lattice-get_atom_position_f"><strong>get_atom_position_f</strong></a>(self, e: str, i: int) -&gt; numpy.ndarray</dt><dd><tt>get&nbsp;i-th&nbsp;atom's&nbsp;fractional&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index</tt></dd></dl>
+
+<dl><dt><a name="Lattice-get_bvs"><strong>get_bvs</strong></a>(self) -&gt; numpy.ndarray</dt></dl>
+
+<dl><dt><a name="Lattice-get_sysname"><strong>get_sysname</strong></a>(self) -&gt; str</dt></dl>
+
+<dl><dt><a name="Lattice-lattice_angles"><strong>lattice_angles</strong></a>(self) -&gt; numpy.ndarray</dt><dd><tt>get&nbsp;lattice&nbsp;angles&nbsp;(in&nbsp;degree)<br>
+(alpha:&nbsp;&lt;bvs[1],&nbsp;bvs[2]&gt;,&nbsp;beta:&nbsp;&lt;bvs[0],&nbsp;bvs[2]&gt;,&nbsp;gamma:&nbsp;&lt;bvs[0],&nbsp;bvs[1]&gt;)<br>
+&nbsp;<br>
+:returns:&nbsp;alpha,&nbsp;beta,&nbsp;gamma</tt></dd></dl>
+
+<dl><dt><a name="Lattice-lattice_lengths"><strong>lattice_lengths</strong></a>(self) -&gt; numpy.ndarray</dt></dl>
+
+<dl><dt><a name="Lattice-replace_bvs"><strong>replace_bvs</strong></a>(self, bvs: numpy.ndarray)</dt><dd><tt>replace&nbsp;basis&nbsp;vectors<br>
+&nbsp;<br>
+:param&nbsp;bvs:&nbsp;the&nbsp;new&nbsp;basis&nbsp;vectors<br>
+&nbsp;<br>
+NOTE:&nbsp;This&nbsp;will&nbsp;retain&nbsp;the&nbsp;APD_f!&nbsp;(and&nbsp;update&nbsp;APD)<br>
+(see&nbsp;set_bvs)</tt></dd></dl>
+
+<dl><dt><a name="Lattice-reshape"><strong>reshape</strong></a>(self, new_shape: numpy.ndarray, crit: float = None)</dt><dd><tt>reshape&nbsp;the&nbsp;lattice,&nbsp;fill&nbsp;atoms&nbsp;into&nbsp;the&nbsp;new&nbsp;shape<br>
+NOTE:&nbsp;this&nbsp;method&nbsp;directly&nbsp;changes&nbsp;the&nbsp;shape&nbsp;of&nbsp;the&nbsp;cell,&nbsp;which&nbsp;can<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;easily&nbsp;damage&nbsp;the&nbsp;periodicity.&nbsp;Use&nbsp;it&nbsp;use&nbsp;caution&nbsp;(see&nbsp;transform)<br>
+&nbsp;<br>
+:param&nbsp;new_shape:&nbsp;3x3&nbsp;array&nbsp;to&nbsp;specify&nbsp;a&nbsp;new&nbsp;lattice&nbsp;shape&nbsp;(BVs)<br>
+:param&nbsp;crit:&nbsp;maximum&nbsp;inter-atom&nbsp;distance&nbsp;(cartesian)&nbsp;to&nbsp;be&nbsp;considered&nbsp;as&nbsp;overlap</tt></dd></dl>
+
+<dl><dt><a name="Lattice-rotate_atoms_around_axis"><strong>rotate_atoms_around_axis</strong></a>(self, a: float, b: float, c: float)</dt><dd><tt>rotate&nbsp;atoms&nbsp;around&nbsp;Cartesian&nbsp;axis&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;a:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;0&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;b:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;1&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;c:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;2&nbsp;(in&nbsp;degree)</tt></dd></dl>
+
+<dl><dt><a name="Lattice-rotate_cell_around_axis"><strong>rotate_cell_around_axis</strong></a>(self, a: float, b: float, c: float)</dt><dd><tt>rotate&nbsp;around&nbsp;Cartesian&nbsp;axis&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;a:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;0&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;b:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;1&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;c:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;2&nbsp;(in&nbsp;degree)</tt></dd></dl>
+
+<dl><dt><a name="Lattice-set_atom_position"><strong>set_atom_position</strong></a>(self, e: str, i: int, ap: numpy.ndarray)</dt><dd><tt>set&nbsp;i-th&nbsp;atom's&nbsp;Cartesian&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index<br>
+:param&nbsp;ap:&nbsp;new&nbsp;atom&nbsp;position</tt></dd></dl>
+
+<dl><dt><a name="Lattice-set_atom_position_f"><strong>set_atom_position_f</strong></a>(self, e: str, i: int, ap: numpy.ndarray)</dt><dd><tt>set&nbsp;i-th&nbsp;atom's&nbsp;fractional&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index<br>
+:param&nbsp;ap:&nbsp;new&nbsp;atom&nbsp;position</tt></dd></dl>
+
+<dl><dt><a name="Lattice-set_bvs"><strong>set_bvs</strong></a>(self, bvs: numpy.ndarray)</dt><dd><tt>re-set&nbsp;the&nbsp;basis&nbsp;vectors&nbsp;with&nbsp;'bv'.<br>
+&nbsp;<br>
+NOTE:&nbsp;This&nbsp;will&nbsp;retain&nbsp;the&nbsp;APD!&nbsp;(and&nbsp;update&nbsp;APD_f)</tt></dd></dl>
+
+<dl><dt><a name="Lattice-set_sysname"><strong>set_sysname</strong></a>(self, s: str)</dt></dl>
+
+<dl><dt><a name="Lattice-swap_bv"><strong>swap_bv</strong></a>(self, i: int, j: int)</dt><dd><tt>swap&nbsp;two&nbsp;basis&nbsp;vector&nbsp;(i-th&nbsp;and&nbsp;j-th)<br>
+&nbsp;<br>
+:param&nbsp;i:&nbsp;the&nbsp;index&nbsp;of&nbsp;one&nbsp;bv<br>
+:param&nbsp;j:&nbsp;the&nbsp;index&nbsp;of&nbsp;another&nbsp;bv</tt></dd></dl>
+
+<dl><dt><a name="Lattice-total_atom_num"><strong>total_atom_num</strong></a>(self) -&gt; int</dt></dl>
+
+<dl><dt><a name="Lattice-transform"><strong>transform</strong></a>(self, t: numpy.ndarray, crit: float = None)</dt><dd><tt>transform&nbsp;both&nbsp;the&nbsp;cell&nbsp;and&nbsp;the&nbsp;atoms&nbsp;<br>
+NOTE:&nbsp;new&nbsp;equivalent&nbsp;atoms&nbsp;will&nbsp;be&nbsp;add&nbsp;to&nbsp;the&nbsp;lattice&nbsp;if&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell&nbsp;reaches&nbsp;outside&nbsp;of&nbsp;the&nbsp;original&nbsp;one,&nbsp;and&nbsp;outside&nbsp;atoms&nbsp;will<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;be&nbsp;deleted.<br>
+&nbsp;<br>
+TODO:&nbsp;make&nbsp;this&nbsp;safer:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;what&nbsp;kind&nbsp;of&nbsp;transformation&nbsp;would&nbsp;not&nbsp;sabotage&nbsp;the&nbsp;original&nbsp;periodicity&nbsp;?<br>
+&nbsp;<br>
+:param&nbsp;t:&nbsp;3x3&nbsp;transform&nbsp;matrix&nbsp;(numpy&nbsp;array)<br>
+:param&nbsp;crit:&nbsp;criteria&nbsp;for&nbsp;close&nbsp;atom&nbsp;elimination,&nbsp;None&nbsp;means&nbsp;no&nbsp;check</tt></dd></dl>
+
+<dl><dt><a name="Lattice-transform_cell"><strong>transform_cell</strong></a>(self, t: numpy.ndarray)</dt><dd><tt>transform&nbsp;the&nbsp;cell&nbsp;(the&nbsp;atoms&nbsp;will&nbsp;follow&nbsp;the&nbsp;deformation)<br>
+&nbsp;<br>
+:param&nbsp;t:&nbsp;3x3&nbsp;transform&nbsp;matrix&nbsp;(numpy&nbsp;array)<br>
+:param&nbsp;extend_atoms:&nbsp;whether&nbsp;or&nbsp;not&nbsp;to&nbsp;add&nbsp;equivalent&nbsp;atoms<br>
+:param&nbsp;crit:&nbsp;criteria&nbsp;for&nbsp;close&nbsp;atom&nbsp;elimination,&nbsp;None&nbsp;means&nbsp;no&nbsp;check</tt></dd></dl>
+
+<dl><dt><a name="Lattice-translate_atoms"><strong>translate_atoms</strong></a>(self, tv: numpy.ndarray)</dt><dd><tt>translate&nbsp;atom&nbsp;positions&nbsp;with&nbsp;a&nbsp;cartesian&nbsp;translation&nbsp;vector<br>
+&nbsp;<br>
+:param&nbsp;tv:&nbsp;translational&nbsp;vector&nbsp;(cartesian)</tt></dd></dl>
+
+<dl><dt><a name="Lattice-translate_atoms_f"><strong>translate_atoms_f</strong></a>(self, tv: numpy.ndarray)</dt><dd><tt>translate&nbsp;atom&nbsp;positions&nbsp;with&nbsp;a&nbsp;fractional&nbsp;translation&nbsp;vector<br>
+&nbsp;<br>
+:param&nbsp;tv:&nbsp;translational&nbsp;vector</tt></dd></dl>
+
+<dl><dt><a name="Lattice-truncate"><strong>truncate</strong></a>(self)</dt><dd><tt>delete&nbsp;outside&nbsp;atoms</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="consoals, arial"><a name="Lattice2D">class <strong>Lattice2D</strong></a>(<a href="pycrystal.html#Lattice">Lattice</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Lattice2D">Lattice2D</a>(sysname:&nbsp;str,&nbsp;bvs:&nbsp;numpy.ndarray,&nbsp;vaccum:&nbsp;float,&nbsp;apd:&nbsp;Dict[str,&nbsp;numpy.ndarray]&nbsp;=&nbsp;None,&nbsp;apd_f:&nbsp;Dict[str,&nbsp;numpy.ndarray]&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+2D&nbsp;lattice&nbsp;class&nbsp;inherited&nbsp;from&nbsp;<a href="#Lattice">Lattice</a>.<br>
+&nbsp;<br>
+Convention:<br>
+1)&nbsp;The&nbsp;first&nbsp;and&nbsp;second&nbsp;basis&nbsp;vectors&nbsp;should&nbsp;be&nbsp;in&nbsp;the&nbsp;XY&nbsp;plane,<br>
+and&nbsp;the&nbsp;3rd&nbsp;bv&nbsp;direction&nbsp;is&nbsp;considered&nbsp;as&nbsp;the&nbsp;vaccum&nbsp;direction<br>
+which&nbsp;should&nbsp;be&nbsp;on&nbsp;the&nbsp;Z&nbsp;direction.<br>
+2)&nbsp;make&nbsp;sure&nbsp;the&nbsp;cell&nbsp;contains&nbsp;no&nbsp;such&nbsp;atom&nbsp;positions&nbsp;as<br>
+(0,&nbsp;0,&nbsp;0.95)&nbsp;which&nbsp;is&nbsp;actually&nbsp;(0,&nbsp;0,&nbsp;-0.05)<br>
+&nbsp;<br>
+NOTE:&nbsp;on&nbsp;initializing,&nbsp;vaccum&nbsp;space&nbsp;will&nbsp;be&nbsp;automatically&nbsp;added&nbsp;on&nbsp;the&nbsp;vertical&nbsp;direction<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="pycrystal.html#Lattice2D">Lattice2D</a></dd>
+<dd><a href="pycrystal.html#Lattice">Lattice</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Lattice2D-__init__"><strong>__init__</strong></a>(self, sysname: str, bvs: numpy.ndarray, vaccum: float, apd: Dict[str, numpy.ndarray] = None, apd_f: Dict[str, numpy.ndarray] = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-align_to_bottom"><strong>align_to_bottom</strong></a>(self)</dt><dd><tt>align&nbsp;atoms&nbsp;at&nbsp;Z=0<br>
+NOTE:&nbsp;only&nbsp;call&nbsp;this&nbsp;if&nbsp;the&nbsp;cell&nbsp;contains&nbsp;no&nbsp;such&nbsp;atom&nbsp;positions&nbsp;as<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(0,&nbsp;0,&nbsp;0.95)&nbsp;which&nbsp;is&nbsp;actually&nbsp;(0,&nbsp;0,&nbsp;-0.05)</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-get_c"><strong>get_c</strong></a>(self) -&gt; float</dt></dl>
+
+<dl><dt><a name="Lattice2D-get_vaccum"><strong>get_vaccum</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Lattice2D-max_z"><strong>max_z</strong></a>(self) -&gt; float</dt><dd><tt>get&nbsp;the&nbsp;Z&nbsp;of&nbsp;the&nbsp;highest&nbsp;atom&nbsp;in&nbsp;cartesian&nbsp;coordinates</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-max_z_f"><strong>max_z_f</strong></a>(self) -&gt; float</dt><dd><tt>get&nbsp;the&nbsp;Z&nbsp;in&nbsp;frac&nbsp;coordinates&nbsp;of&nbsp;the&nbsp;highest&nbsp;atom</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-min_z"><strong>min_z</strong></a>(self) -&gt; float</dt><dd><tt>get&nbsp;the&nbsp;Z&nbsp;of&nbsp;the&nbsp;lowest&nbsp;atom&nbsp;in&nbsp;cartesian&nbsp;coordinates</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-min_z_f"><strong>min_z_f</strong></a>(self) -&gt; float</dt><dd><tt>get&nbsp;the&nbsp;Z&nbsp;of&nbsp;the&nbsp;lowest&nbsp;atom&nbsp;in&nbsp;frac&nbsp;coordinates</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-set_c"><strong>set_c</strong></a>(self, c: float)</dt><dd><tt>set&nbsp;the&nbsp;height&nbsp;of&nbsp;the&nbsp;2D&nbsp;lattice</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-set_vaccum"><strong>set_vaccum</strong></a>(self, vaccum: float)</dt><dd><tt>this&nbsp;will&nbsp;set&nbsp;self.<strong>_vaccum</strong>&nbsp;and&nbsp;update&nbsp;the&nbsp;basis&nbsp;vectors<br>
+be&nbsp;sure&nbsp;to&nbsp;call&nbsp;this&nbsp;setter&nbsp;instead&nbsp;of&nbsp;changing&nbsp;self.<strong>_vaccum</strong>&nbsp;directly!</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-thickness"><strong>thickness</strong></a>(self) -&gt; float</dt></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="Lattice2D-check_bvs"><strong>check_bvs</strong></a>(bvs: numpy.ndarray)</dt><dd><tt>check&nbsp;if&nbsp;a&nbsp;basis&nbsp;vectors&nbsp;set&nbsp;meets&nbsp;the&nbsp;criterion&nbsp;for&nbsp;2D&nbsp;lattice</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="pycrystal.html#Lattice">Lattice</a>:<br>
+<dl><dt><a name="Lattice2D-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-add_atom"><strong>add_atom</strong></a>(self, e: str, ap: numpy.ndarray)</dt><dd><tt>add&nbsp;an&nbsp;atom&nbsp;with&nbsp;cartesian&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;element<br>
+:param&nbsp;ap:&nbsp;cartesian&nbsp;atom&nbsp;position<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;index&nbsp;of&nbsp;newly&nbsp;added&nbsp;atom</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-add_atom_f"><strong>add_atom_f</strong></a>(self, e: str, ap: numpy.ndarray) -&gt; int</dt><dd><tt>add&nbsp;an&nbsp;atom&nbsp;with&nbsp;fractional&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;element<br>
+:param&nbsp;ap:&nbsp;fractional&nbsp;atom&nbsp;position<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;index&nbsp;of&nbsp;newly&nbsp;added&nbsp;atom</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-atom_distance"><strong>atom_distance</strong></a>(self, e0: str, i0: int, e1: str, i1: int) -&gt; float</dt><dd><tt>get&nbsp;the&nbsp;'closest'&nbsp;cartesian&nbsp;distance&nbsp;between&nbsp;two&nbsp;atoms<br>
+&nbsp;<br>
+:param&nbsp;e0:&nbsp;atom&nbsp;species&nbsp;of&nbsp;atom&nbsp;0<br>
+:param&nbsp;e1:&nbsp;atom&nbsp;species&nbsp;of&nbsp;atom&nbsp;1<br>
+:param&nbsp;i0:&nbsp;index&nbsp;of&nbsp;atom&nbsp;0<br>
+:param&nbsp;i1:&nbsp;index&nbsp;of&nbsp;atom&nbsp;1<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;cartesian&nbsp;distance&nbsp;between&nbsp;atom&nbsp;0&nbsp;and&nbsp;atom&nbsp;1</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-atom_num"><strong>atom_num</strong></a>(self, e: str) -&gt; int</dt><dd><tt>get&nbsp;the&nbsp;count&nbsp;of&nbsp;atoms&nbsp;of&nbsp;an&nbsp;atom&nbsp;species<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:returns:&nbsp;the&nbsp;count&nbsp;the&nbsp;`e`&nbsp;atoms</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-atom_num_dict"><strong>atom_num_dict</strong></a>(self) -&gt; Dict[str, int]</dt><dd><tt>get&nbsp;atom&nbsp;number&nbsp;dict&nbsp;(indexed&nbsp;by&nbsp;elements)</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-atom_species"><strong>atom_species</strong></a>(self) -&gt; List[str]</dt></dl>
+
+<dl><dt><a name="Lattice2D-confine_atoms_to_lattice"><strong>confine_atoms_to_lattice</strong></a>(self)</dt><dd><tt>put&nbsp;outside&nbsp;atoms&nbsp;back&nbsp;to&nbsp;the&nbsp;lattice&nbsp;by&nbsp;periodic&nbsp;repeating&nbsp;(-0.2&nbsp;-&gt;&nbsp;0.8,&nbsp;e.&nbsp;g.)<br>
+&nbsp;<br>
+NOTE:&nbsp;DON'T&nbsp;use&nbsp;this&nbsp;if&nbsp;there&nbsp;are&nbsp;vaccum&nbsp;in&nbsp;the&nbsp;lattice&nbsp;(2D&nbsp;lattice)&nbsp;and<br>
+the&nbsp;lattice&nbsp;atoms&nbsp;are&nbsp;actually&nbsp;shifted&nbsp;away&nbsp;from&nbsp;the&nbsp;lattice</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-delete_atom"><strong>delete_atom</strong></a>(self, e: str, i: int)</dt><dd><tt>delete&nbsp;an&nbsp;atom<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;index</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-eliminate_overlap"><strong>eliminate_overlap</strong></a>(self, crit: float)</dt><dd><tt>delete&nbsp;overlapping&nbsp;atoms&nbsp;(this&nbsp;can&nbsp;be&nbsp;CPU-consuming)<br>
+&nbsp;<br>
+:param&nbsp;crit:&nbsp;maximum&nbsp;inter-atom&nbsp;distance&nbsp;(cartesian)&nbsp;to&nbsp;be&nbsp;considered&nbsp;as&nbsp;overlap</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-extend"><strong>extend</strong></a>(self, nx: int, ny: int, nz: int)</dt><dd><tt>build&nbsp;super&nbsp;cell<br>
+&nbsp;<br>
+:param&nbsp;nx:&nbsp;repeat&nbsp;times&nbsp;on&nbsp;x<br>
+:param&nbsp;ny:&nbsp;repeat&nbsp;times&nbsp;on&nbsp;y<br>
+:param&nbsp;nz:&nbsp;repeat&nbsp;times&nbsp;on&nbsp;z</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-get_apd"><strong>get_apd</strong></a>(self) -&gt; Dict[str, numpy.ndarray]</dt><dd><tt>get&nbsp;Cartesian&nbsp;atom&nbsp;positions&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-get_apd_f"><strong>get_apd_f</strong></a>(self) -&gt; Dict[str, numpy.ndarray]</dt><dd><tt>get&nbsp;fractional&nbsp;atom&nbsp;positions&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-get_atom_position"><strong>get_atom_position</strong></a>(self, e: str, i: int) -&gt; numpy.ndarray</dt><dd><tt>get&nbsp;i-th&nbsp;atom's&nbsp;Cartesian&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-get_atom_position_f"><strong>get_atom_position_f</strong></a>(self, e: str, i: int) -&gt; numpy.ndarray</dt><dd><tt>get&nbsp;i-th&nbsp;atom's&nbsp;fractional&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-get_bvs"><strong>get_bvs</strong></a>(self) -&gt; numpy.ndarray</dt></dl>
+
+<dl><dt><a name="Lattice2D-get_sysname"><strong>get_sysname</strong></a>(self) -&gt; str</dt></dl>
+
+<dl><dt><a name="Lattice2D-lattice_angles"><strong>lattice_angles</strong></a>(self) -&gt; numpy.ndarray</dt><dd><tt>get&nbsp;lattice&nbsp;angles&nbsp;(in&nbsp;degree)<br>
+(alpha:&nbsp;&lt;bvs[1],&nbsp;bvs[2]&gt;,&nbsp;beta:&nbsp;&lt;bvs[0],&nbsp;bvs[2]&gt;,&nbsp;gamma:&nbsp;&lt;bvs[0],&nbsp;bvs[1]&gt;)<br>
+&nbsp;<br>
+:returns:&nbsp;alpha,&nbsp;beta,&nbsp;gamma</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-lattice_lengths"><strong>lattice_lengths</strong></a>(self) -&gt; numpy.ndarray</dt></dl>
+
+<dl><dt><a name="Lattice2D-replace_bvs"><strong>replace_bvs</strong></a>(self, bvs: numpy.ndarray)</dt><dd><tt>replace&nbsp;basis&nbsp;vectors<br>
+&nbsp;<br>
+:param&nbsp;bvs:&nbsp;the&nbsp;new&nbsp;basis&nbsp;vectors<br>
+&nbsp;<br>
+NOTE:&nbsp;This&nbsp;will&nbsp;retain&nbsp;the&nbsp;APD_f!&nbsp;(and&nbsp;update&nbsp;APD)<br>
+(see&nbsp;set_bvs)</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-reshape"><strong>reshape</strong></a>(self, new_shape: numpy.ndarray, crit: float = None)</dt><dd><tt>reshape&nbsp;the&nbsp;lattice,&nbsp;fill&nbsp;atoms&nbsp;into&nbsp;the&nbsp;new&nbsp;shape<br>
+NOTE:&nbsp;this&nbsp;method&nbsp;directly&nbsp;changes&nbsp;the&nbsp;shape&nbsp;of&nbsp;the&nbsp;cell,&nbsp;which&nbsp;can<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;easily&nbsp;damage&nbsp;the&nbsp;periodicity.&nbsp;Use&nbsp;it&nbsp;use&nbsp;caution&nbsp;(see&nbsp;transform)<br>
+&nbsp;<br>
+:param&nbsp;new_shape:&nbsp;3x3&nbsp;array&nbsp;to&nbsp;specify&nbsp;a&nbsp;new&nbsp;lattice&nbsp;shape&nbsp;(BVs)<br>
+:param&nbsp;crit:&nbsp;maximum&nbsp;inter-atom&nbsp;distance&nbsp;(cartesian)&nbsp;to&nbsp;be&nbsp;considered&nbsp;as&nbsp;overlap</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-rotate_atoms_around_axis"><strong>rotate_atoms_around_axis</strong></a>(self, a: float, b: float, c: float)</dt><dd><tt>rotate&nbsp;atoms&nbsp;around&nbsp;Cartesian&nbsp;axis&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;a:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;0&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;b:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;1&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;c:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;2&nbsp;(in&nbsp;degree)</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-rotate_cell_around_axis"><strong>rotate_cell_around_axis</strong></a>(self, a: float, b: float, c: float)</dt><dd><tt>rotate&nbsp;around&nbsp;Cartesian&nbsp;axis&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;a:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;0&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;b:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;1&nbsp;(in&nbsp;degree)<br>
+:param&nbsp;c:&nbsp;angle&nbsp;on&nbsp;axis&nbsp;2&nbsp;(in&nbsp;degree)</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-set_atom_position"><strong>set_atom_position</strong></a>(self, e: str, i: int, ap: numpy.ndarray)</dt><dd><tt>set&nbsp;i-th&nbsp;atom's&nbsp;Cartesian&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index<br>
+:param&nbsp;ap:&nbsp;new&nbsp;atom&nbsp;position</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-set_atom_position_f"><strong>set_atom_position_f</strong></a>(self, e: str, i: int, ap: numpy.ndarray)</dt><dd><tt>set&nbsp;i-th&nbsp;atom's&nbsp;fractional&nbsp;position<br>
+&nbsp;<br>
+:param&nbsp;e:&nbsp;atom&nbsp;species<br>
+:param&nbsp;i:&nbsp;atom&nbsp;index<br>
+:param&nbsp;ap:&nbsp;new&nbsp;atom&nbsp;position</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-set_bvs"><strong>set_bvs</strong></a>(self, bvs: numpy.ndarray)</dt><dd><tt>re-set&nbsp;the&nbsp;basis&nbsp;vectors&nbsp;with&nbsp;'bv'.<br>
+&nbsp;<br>
+NOTE:&nbsp;This&nbsp;will&nbsp;retain&nbsp;the&nbsp;APD!&nbsp;(and&nbsp;update&nbsp;APD_f)</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-set_sysname"><strong>set_sysname</strong></a>(self, s: str)</dt></dl>
+
+<dl><dt><a name="Lattice2D-swap_bv"><strong>swap_bv</strong></a>(self, i: int, j: int)</dt><dd><tt>swap&nbsp;two&nbsp;basis&nbsp;vector&nbsp;(i-th&nbsp;and&nbsp;j-th)<br>
+&nbsp;<br>
+:param&nbsp;i:&nbsp;the&nbsp;index&nbsp;of&nbsp;one&nbsp;bv<br>
+:param&nbsp;j:&nbsp;the&nbsp;index&nbsp;of&nbsp;another&nbsp;bv</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-total_atom_num"><strong>total_atom_num</strong></a>(self) -&gt; int</dt></dl>
+
+<dl><dt><a name="Lattice2D-transform"><strong>transform</strong></a>(self, t: numpy.ndarray, crit: float = None)</dt><dd><tt>transform&nbsp;both&nbsp;the&nbsp;cell&nbsp;and&nbsp;the&nbsp;atoms&nbsp;<br>
+NOTE:&nbsp;new&nbsp;equivalent&nbsp;atoms&nbsp;will&nbsp;be&nbsp;add&nbsp;to&nbsp;the&nbsp;lattice&nbsp;if&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell&nbsp;reaches&nbsp;outside&nbsp;of&nbsp;the&nbsp;original&nbsp;one,&nbsp;and&nbsp;outside&nbsp;atoms&nbsp;will<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;be&nbsp;deleted.<br>
+&nbsp;<br>
+TODO:&nbsp;make&nbsp;this&nbsp;safer:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;what&nbsp;kind&nbsp;of&nbsp;transformation&nbsp;would&nbsp;not&nbsp;sabotage&nbsp;the&nbsp;original&nbsp;periodicity&nbsp;?<br>
+&nbsp;<br>
+:param&nbsp;t:&nbsp;3x3&nbsp;transform&nbsp;matrix&nbsp;(numpy&nbsp;array)<br>
+:param&nbsp;crit:&nbsp;criteria&nbsp;for&nbsp;close&nbsp;atom&nbsp;elimination,&nbsp;None&nbsp;means&nbsp;no&nbsp;check</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-transform_cell"><strong>transform_cell</strong></a>(self, t: numpy.ndarray)</dt><dd><tt>transform&nbsp;the&nbsp;cell&nbsp;(the&nbsp;atoms&nbsp;will&nbsp;follow&nbsp;the&nbsp;deformation)<br>
+&nbsp;<br>
+:param&nbsp;t:&nbsp;3x3&nbsp;transform&nbsp;matrix&nbsp;(numpy&nbsp;array)<br>
+:param&nbsp;extend_atoms:&nbsp;whether&nbsp;or&nbsp;not&nbsp;to&nbsp;add&nbsp;equivalent&nbsp;atoms<br>
+:param&nbsp;crit:&nbsp;criteria&nbsp;for&nbsp;close&nbsp;atom&nbsp;elimination,&nbsp;None&nbsp;means&nbsp;no&nbsp;check</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-translate_atoms"><strong>translate_atoms</strong></a>(self, tv: numpy.ndarray)</dt><dd><tt>translate&nbsp;atom&nbsp;positions&nbsp;with&nbsp;a&nbsp;cartesian&nbsp;translation&nbsp;vector<br>
+&nbsp;<br>
+:param&nbsp;tv:&nbsp;translational&nbsp;vector&nbsp;(cartesian)</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-translate_atoms_f"><strong>translate_atoms_f</strong></a>(self, tv: numpy.ndarray)</dt><dd><tt>translate&nbsp;atom&nbsp;positions&nbsp;with&nbsp;a&nbsp;fractional&nbsp;translation&nbsp;vector<br>
+&nbsp;<br>
+:param&nbsp;tv:&nbsp;translational&nbsp;vector</tt></dd></dl>
+
+<dl><dt><a name="Lattice2D-truncate"><strong>truncate</strong></a>(self)</dt><dd><tt>delete&nbsp;outside&nbsp;atoms</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="pycrystal.html#Lattice">Lattice</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="consoals, arial"><a name="NumpyShapeError">class <strong>NumpyShapeError</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#NumpyShapeError">NumpyShapeError</a>(expected_shape:&nbsp;Tuple[int],&nbsp;shape:&nbsp;Tuple[int])<br>
+&nbsp;<br>
+Common&nbsp;base&nbsp;class&nbsp;for&nbsp;all&nbsp;non-exit&nbsp;exceptions.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="pycrystal.html#NumpyShapeError">NumpyShapeError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="NumpyShapeError-__init__"><strong>__init__</strong></a>(self, expected_shape: Tuple[int], shape: Tuple[int])</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="NumpyShapeError-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="NumpyShapeError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="consoals, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="NumpyShapeError-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="NumpyShapeError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="NumpyShapeError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="NumpyShapeError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="NumpyShapeError-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="NumpyShapeError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="NumpyShapeError-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#NumpyShapeError-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="consoals, arial"><a name="UnSupportedError">class <strong>UnSupportedError</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#UnSupportedError">UnSupportedError</a>(arg:&nbsp;str)<br>
+&nbsp;<br>
+Common&nbsp;base&nbsp;class&nbsp;for&nbsp;all&nbsp;non-exit&nbsp;exceptions.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="pycrystal.html#UnSupportedError">UnSupportedError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="UnSupportedError-__init__"><strong>__init__</strong></a>(self, arg: str)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="UnSupportedError-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="UnSupportedError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="consoals, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="UnSupportedError-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="UnSupportedError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="UnSupportedError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="UnSupportedError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="UnSupportedError-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="UnSupportedError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="UnSupportedError-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#UnSupportedError-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="consoals, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-calc_moire_bv"><strong>calc_moire_bv</strong></a>(latt0: pycrystal.Lattice2D, latt1: pycrystal.Lattice2D) -&gt; numpy.ndarray</dt><dd><tt>calculate&nbsp;the&nbsp;basis&nbsp;vectors&nbsp;of&nbsp;the&nbsp;Moirésuperlattice&nbsp;(refer&nbsp;to&nbsp;the&nbsp;AFM&nbsp;review)<br>
+(Tang,&nbsp;K.,&nbsp;Qi,&nbsp;W.,&nbsp;Adv.&nbsp;Funct.&nbsp;Mater.&nbsp;2020,&nbsp;30,&nbsp;2002672.<br>
+&nbsp;https://doi.org/10.1002/adfm.202002672)<br>
+&nbsp;<br>
+:param&nbsp;latt0:&nbsp;lattice&nbsp;0<br>
+:param&nbsp;latt1:&nbsp;lattice&nbsp;1<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;basis&nbsp;vectors&nbsp;of&nbsp;MSL&nbsp;calculated&nbsp;from&nbsp;the&nbsp;given&nbsp;two&nbsp;lattices</tt></dd></dl>
+ <dl><dt><a name="-check_1darray"><strong>check_1darray</strong></a>(a: numpy.ndarray, i: int)</dt><dd><tt>assert&nbsp;that&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;an&nbsp;np.ndarray&nbsp;with&nbsp;shape&nbsp;(i,)<br>
+&nbsp;<br>
+:param&nbsp;a:&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;be&nbsp;asserted<br>
+:param&nbsp;i:&nbsp;elements&nbsp;count</tt></dd></dl>
+ <dl><dt><a name="-check_2darray"><strong>check_2darray</strong></a>(a: numpy.ndarray, i: int, j: int)</dt><dd><tt>assert&nbsp;that&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;an&nbsp;np.ndarray&nbsp;with&nbsp;shape&nbsp;(i,&nbsp;j)<br>
+&nbsp;<br>
+:param&nbsp;a:&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;be&nbsp;asserted<br>
+:param&nbsp;i:&nbsp;row&nbsp;count<br>
+:param&nbsp;j:&nbsp;column&nbsp;count</tt></dd></dl>
+ <dl><dt><a name="-create_moire_sheet"><strong>create_moire_sheet</strong></a>(latt0: pycrystal.Lattice2D, latt1: pycrystal.Lattice2D, alpha: float, dist: float, w: float, len: float) -&gt; pycrystal.Lattice2D</dt><dd><tt>build&nbsp;moire&nbsp;pattern&nbsp;2D&nbsp;atomic&nbsp;sheets<br>
+NOTE:&nbsp;for&nbsp;now,&nbsp;the&nbsp;atom&nbsp;sheet&nbsp;will&nbsp;be&nbsp;a&nbsp;rhombus&nbsp;shape,&nbsp;will&nbsp;vaccum&nbsp;space<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;each&nbsp;direction.<br>
+&nbsp;<br>
+:param&nbsp;latt0:&nbsp;lattice&nbsp;0<br>
+:param&nbsp;latt1:&nbsp;lattice&nbsp;1<br>
+:param&nbsp;alpha:&nbsp;rotation&nbsp;angle&nbsp;(degree)<br>
+:param&nbsp;dist:&nbsp;interlayer&nbsp;distance&nbsp;<br>
+:param&nbsp;w:&nbsp;the&nbsp;angle&nbsp;of&nbsp;the&nbsp;rhombus&nbsp;shape&nbsp;(degree)<br>
+:param&nbsp;len:&nbsp;the&nbsp;length&nbsp;of&nbsp;the&nbsp;rhombus&nbsp;shape<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;built&nbsp;lattice</tt></dd></dl>
+ <dl><dt><a name="-create_msl"><strong>create_msl</strong></a>(latt0: pycrystal.Lattice2D, latt1: pycrystal.Lattice2D, alpha: float, dist: float, tol=1) -&gt; pycrystal.Lattice2D</dt><dd><tt>Build&nbsp;Moire&nbsp;superlattice&nbsp;(MSL)<br>
+&nbsp;<br>
+:param&nbsp;latt0:&nbsp;lattice&nbsp;0<br>
+:param&nbsp;latt1:&nbsp;lattice&nbsp;1<br>
+:param&nbsp;alpha:&nbsp;twist&nbsp;angle<br>
+:param&nbsp;dist:&nbsp;interlayer&nbsp;distance<br>
+:param&nbsp;tol:&nbsp;maximum&nbsp;inter-atom&nbsp;distance&nbsp;(cartesian)&nbsp;to&nbsp;be&nbsp;considered&nbsp;as&nbsp;overlap<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;built&nbsp;MSL&nbsp;lattice</tt></dd></dl>
+ <dl><dt><a name="-create_multilayers"><strong>create_multilayers</strong></a>(latt: pycrystal.Lattice2D, ln: int, dist: float, vaccum: float = 15, sn: str = None) -&gt; pycrystal.Lattice2D</dt><dd><tt>build&nbsp;multi-layer&nbsp;system&nbsp;from&nbsp;a&nbsp;monolayer<br>
+NOTE:&nbsp;this&nbsp;will&nbsp;align&nbsp;the&nbsp;atoms&nbsp;to&nbsp;bottom&nbsp;first,&nbsp;make&nbsp;sure&nbsp;your&nbsp;input&nbsp;lattice<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doesn't&nbsp;contain&nbsp;atoms&nbsp;of&nbsp;different&nbsp;periods&nbsp;((0.1,&nbsp;0.1,&nbsp;0.95)&nbsp;e.&nbsp;g.)<br>
+&nbsp;<br>
+:param&nbsp;latt:&nbsp;<a href="#Lattice2D">Lattice2D</a>&nbsp;<a href="builtins.html#object">object</a>&nbsp;as&nbsp;monolayer<br>
+:param&nbsp;dist:&nbsp;interlayer&nbsp;distance<br>
+:param&nbsp;vaccum:&nbsp;vaccum&nbsp;height<br>
+:param&nbsp;ln:&nbsp;layer&nbsp;number<br>
+:param&nbsp;sn:&nbsp;the&nbsp;new&nbsp;system&nbsp;name<br>
+&nbsp;<br>
+:returns:&nbsp;the&nbsp;built&nbsp;2D&nbsp;lattice</tt></dd></dl>
+ <dl><dt><a name="-create_vdwh"><strong>create_vdwh</strong></a>(latt0: pycrystal.Lattice2D, latt1: pycrystal.Lattice2D, dist: float, crit: float, vaccum: float = 20, sn: str = None) -&gt; pycrystal.Lattice2D</dt><dd><tt>build&nbsp;van&nbsp;der&nbsp;Waals&nbsp;Heterostructure&nbsp;(vdwh)<br>
+NOTE:&nbsp;this&nbsp;will&nbsp;align&nbsp;the&nbsp;atoms&nbsp;to&nbsp;bottom&nbsp;first,&nbsp;make&nbsp;sure&nbsp;your&nbsp;input&nbsp;lattice<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doesn't&nbsp;contain&nbsp;atoms&nbsp;of&nbsp;different&nbsp;periods&nbsp;((0.1,&nbsp;0.1,&nbsp;0.95)&nbsp;e.&nbsp;g.)<br>
+&nbsp;<br>
+:param&nbsp;latt0:&nbsp;lattice&nbsp;0&nbsp;(at&nbsp;bottom)<br>
+:param&nbsp;latt1:&nbsp;lattice&nbsp;1<br>
+:param&nbsp;dist:&nbsp;interlayer&nbsp;distance&nbsp;(distance&nbsp;between&nbsp;closest&nbsp;atomic&nbsp;planes)<br>
+:param&nbsp;crit:&nbsp;maximum&nbsp;fractional&nbsp;lattice&nbsp;length&nbsp;mismatch<br>
+:param&nbsp;vaccum:&nbsp;vaccum&nbsp;height<br>
+:param&nbsp;sn:&nbsp;the&nbsp;new&nbsp;system&nbsp;new</tt></dd></dl>
+ <dl><dt><a name="-lattice_to_2D"><strong>lattice_to_2D</strong></a>(latt: pycrystal.Lattice, vaccum: float) -&gt; pycrystal.Lattice2D</dt><dd><tt>build&nbsp;2D&nbsp;lattice&nbsp;with&nbsp;a&nbsp;<a href="#Lattice">Lattice</a>&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+ <dl><dt><a name="-merge_cell"><strong>merge_cell</strong></a>(latt0: pycrystal.Lattice, latt1: pycrystal.Lattice, sn='Merged System', tol=0.01) -&gt; pycrystal.Lattice</dt><dd><tt>merge&nbsp;two&nbsp;lattices&nbsp;of&nbsp;close&nbsp;lattice&nbsp;shape&nbsp;and&nbsp;size<br>
+&nbsp;<br>
+:param&nbsp;latt0:&nbsp;lattice&nbsp;0<br>
+:param&nbsp;latt1:&nbsp;lattice&nbsp;1<br>
+:param&nbsp;sn:&nbsp;the&nbsp;name&nbsp;for&nbsp;the&nbsp;merged&nbsp;system<br>
+:param&nbsp;tolerance:&nbsp;tolerance&nbsp;of&nbsp;lattice&nbsp;mismatch&nbsp;(fractional&nbsp;difference&nbsp;in&nbsp;BV&nbsp;components)<br>
+&nbsp;<br>
+:return:&nbsp;the&nbsp;merged&nbsp;lattice</tt></dd></dl>
+ <dl><dt><a name="-read_2D_lattice"><strong>read_2D_lattice</strong></a>(fname: str, ftype='', vaccum=15) -&gt; pycrystal.Lattice2D</dt><dd><tt>read&nbsp;2D&nbsp;lattice&nbsp;from&nbsp;a&nbsp;file<br>
+&nbsp;<br>
+:param&nbsp;fname:&nbsp;file&nbsp;name<br>
+:param&nbsp;ftype:&nbsp;file&nbsp;type&nbsp;(supported:&nbsp;'vasp'),&nbsp;empty&nbsp;for&nbsp;auto-determination<br>
+:param&nbsp;vaccum:&nbsp;vaccum&nbsp;on&nbsp;Z&nbsp;direction<br>
+&nbsp;<br>
+:return:&nbsp;read&nbsp;2DLattice</tt></dd></dl>
+ <dl><dt><a name="-read_cif"><strong>read_cif</strong></a>(fname: str) -&gt; pycrystal.Lattice</dt><dd><tt>read&nbsp;in&nbsp;a&nbsp;&gt;&gt;P&nbsp;1&nbsp;space&nbsp;group&lt;&lt;&nbsp;CIF&nbsp;(might&nbsp;be&nbsp;buggy&nbsp;since&nbsp;the&nbsp;format&nbsp;itself&nbsp;is&nbsp;like&nbsp;shit)<br>
+&nbsp;<br>
+NOTE:&nbsp;The&nbsp;_atom_site_xxx&nbsp;lines&nbsp;must&nbsp;be&nbsp;continous&nbsp;(with&nbsp;NO&nbsp;other&nbsp;commands&nbsp;between&nbsp;them),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;the&nbsp;atom&nbsp;position&nbsp;lines&nbsp;must&nbsp;follow&nbsp;these&nbsp;_atom_site_xxx&nbsp;lines&nbsp;and&nbsp;be&nbsp;continous<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as&nbsp;well.&nbsp;Last&nbsp;but&nbsp;not&nbsp;least,&nbsp;it's&nbsp;best&nbsp;to&nbsp;leave&nbsp;a&nbsp;blank&nbsp;line&nbsp;after&nbsp;the&nbsp;end&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atom&nbsp;position&nbsp;lines&nbsp;block&nbsp;(so&nbsp;that&nbsp;we&nbsp;know&nbsp;the&nbsp;statement&nbsp;is&nbsp;ended)</tt></dd></dl>
+ <dl><dt><a name="-read_lattice"><strong>read_lattice</strong></a>(fname: str, ftype='') -&gt; pycrystal.Lattice</dt><dd><tt>read&nbsp;lattice&nbsp;from&nbsp;a&nbsp;file<br>
+&nbsp;<br>
+:param&nbsp;fname:&nbsp;file&nbsp;name<br>
+:param&nbsp;ftype:&nbsp;file&nbsp;type&nbsp;(supported:&nbsp;'vasp'&nbsp;and&nbsp;'cif'),&nbsp;empty&nbsp;for&nbsp;auto-determination<br>
+&nbsp;<br>
+:return:&nbsp;read&nbsp;lattice</tt></dd></dl>
+ <dl><dt><a name="-read_poscar"><strong>read_poscar</strong></a>(fname: str) -&gt; str</dt><dd><tt>read&nbsp;a&nbsp;VASP&nbsp;POSCAR<br>
+&nbsp;<br>
+:param&nbsp;fname:&nbsp;file&nbsp;name<br>
+&nbsp;<br>
+:return:&nbsp;read&nbsp;lattice</tt></dd></dl>
+ <dl><dt><a name="-read_xyz_as_lattice"><strong>read_xyz_as_lattice</strong></a>(fname: str, cell: numpy.ndarray, crit: float = 0.1) -&gt; pycrystal.Lattice</dt><dd><tt>read&nbsp;xyz&nbsp;file&nbsp;as&nbsp;lattice<br>
+&nbsp;<br>
+:param&nbsp;fname:&nbsp;file&nbsp;name<br>
+:param&nbsp;cell:&nbsp;3x3&nbsp;ndarray&nbsp;basis&nbsp;vectors<br>
+:param&nbsp;crit:&nbsp;overlap&nbsp;checking&nbsp;criteria&nbsp;(see&nbsp;<a href="#Lattice">Lattice</a>.eliminate_overlap)<br>
+&nbsp;<br>
+:returns:&nbsp;read&nbsp;lattice</tt></dd></dl>
+ <dl><dt><a name="-save_cif"><strong>save_cif</strong></a>(latt: pycrystal.Lattice, fname: str)</dt></dl>
+ <dl><dt><a name="-save_poscar"><strong>save_poscar</strong></a>(latt: pycrystal.Lattice, fname: str, ctype='F')</dt><dd><tt>write&nbsp;lattice&nbsp;to&nbsp;a&nbsp;POSCAR&nbsp;file&nbsp;in&nbsp;UNIX&nbsp;fileformat<br>
+NOTE:&nbsp;fixed&nbsp;width&nbsp;output&nbsp;is&nbsp;used&nbsp;here,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;might&nbsp;cause&nbsp;problem&nbsp;if&nbsp;the&nbsp;numbers&nbsp;getting&nbsp;too&nbsp;large&nbsp;to&nbsp;fit&nbsp;in!<br>
+&nbsp;<br>
+:param&nbsp;latt:&nbsp;lattice&nbsp;to&nbsp;write<br>
+:param&nbsp;fname:&nbsp;output&nbsp;file&nbsp;name<br>
+:param&nbsp;ctype:&nbsp;coordinates&nbsp;type:&nbsp;F&nbsp;(fractional)&nbsp;or&nbsp;C&nbsp;(cartesian)</tt></dd></dl>
+ <dl><dt><a name="-save_xyz"><strong>save_xyz</strong></a>(latt: pycrystal.Lattice, fname: str)</dt><dd><tt>write&nbsp;lattice&nbsp;to&nbsp;a&nbsp;xyz&nbsp;file&nbsp;in&nbsp;UNIX&nbsp;fileformat<br>
+NOTE:&nbsp;fixed&nbsp;width&nbsp;output&nbsp;is&nbsp;used&nbsp;here,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;might&nbsp;cause&nbsp;problem&nbsp;if&nbsp;the&nbsp;numbers&nbsp;getting&nbsp;too&nbsp;large&nbsp;to&nbsp;fit&nbsp;in!<br>
+&nbsp;<br>
+:param&nbsp;latt:&nbsp;lattice&nbsp;to&nbsp;write<br>
+:param&nbsp;fname:&nbsp;output&nbsp;file&nbsp;name</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="consoals, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Dict</strong> = typing.Dict<br>
+<strong>List</strong> = typing.List<br>
+<strong>Tuple</strong> = typing.Tuple<br>
+<strong>___author___</strong> = 'Tang Kewei'</td></tr></table>
+</body></html>

@@ -1,4 +1,4 @@
-# pycrystal
+# PyCrystal
 a small piece of code for crystal operation (especially 2D crystals)
 
 ## Functionalities:
